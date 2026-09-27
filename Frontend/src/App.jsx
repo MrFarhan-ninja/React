@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import './app.css'
+import Post from './Post.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
   const [seconds, setSeconds] = useState(0)
   const [status, setStatus] = useState("idle")
+
 
   const increase = () => {
     setCount(count + 1)
@@ -68,6 +70,8 @@ function App() {
         </div>
 
       </div>
+
+      <Post />
     </div>
   )
 }
