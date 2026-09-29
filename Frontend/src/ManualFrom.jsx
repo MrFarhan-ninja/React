@@ -56,10 +56,13 @@ const ManualFrom = () => {
         <form onSubmit={submit} noValidate>
             <label>Name</label>
             <input value ={values.name} onChange={set('name')} />
+                {errors.name} && <span>{errors.name}</span>
                 <label>Email</label>
             <input value ={values.email} onChange={set('email')} />
+            {errors.email} && <span>{errors.email}</span>
                 <label>Name</label>
             <input value ={values.password} onChange={set('password')} />
+            {errors.password} && <span>{errors.password}</span>
         </form>
     </div>
   )
